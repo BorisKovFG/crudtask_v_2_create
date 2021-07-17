@@ -1,0 +1,11 @@
+<?php if (count($flash) > 0) : ?>
+    <h2><?= $post['name'] ?></h2>
+    <h6><?= $post['body'] ?></h6>
+    <ul>
+        <?php foreach ($flash as $messages) : ?>
+            <?php foreach ($messages as $message) : ?>
+                <li><?= $message ?></li>
+            <?php endforeach ?>
+        <?php endforeach ?>
+    </ul>
+<?php endif ?>

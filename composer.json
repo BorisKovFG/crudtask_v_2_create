@@ -1,0 +1,23 @@
+{
+    "name": "b.greff/crudtask_v2_create",
+    "authors": [
+        {
+            "name": "BorisKovFG",
+            "email": "multiallin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.8",
+        "slim/psr7": "^1.4",
+        "slim/http": "^1.2",
+        "tightenco/collect": "^8.34",
+        "slim/php-view": "^3.1",
+        "php-di/php-di": "^6.3",
+        "slim/flash": "^0.4.0"
+    }
+}

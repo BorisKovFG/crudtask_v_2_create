@@ -1,0 +1,25 @@
+<form action="/posts" method="post">
+    <div>
+        <label>
+            Name:
+            <input type="text" required placeholder="Add name of post" name="post[name]"
+                   value="<?= htmlspecialchars($post['name'] ?? ''); ?>">
+        </label>
+        <?php if(isset($errors['name'])): ?>
+        <div><?= $errors['name'] ?></div>
+        <?php endif; ?>
+    </div>
+    <div>
+    <label>
+        Post:
+        <input type="text" required placeholder="Add post" name="post[body]"
+               value="<?= htmlspecialchars($post['body'] ?? ''); ?>">
+    </label>
+    <?php if(isset($errors['body'])): ?>
+        <div><?= $errors['body'] ?></div>
+    <?php endif; ?>
+    </div>
+    <div>
+        <input type="submit" value="Add">
+    </div>
+</form>
